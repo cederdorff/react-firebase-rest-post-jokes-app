@@ -210,6 +210,10 @@ button.btn-outline {
     padding: 2.032em 1em;
 }
 
+.btn-create {
+    margin: 0 0 1em auto;
+}
+
 input {
     margin: 1em auto;
     width: 100%;

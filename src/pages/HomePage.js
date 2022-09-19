@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import PostCard from "../components/PostCard";
 
 export default function HomePage() {
@@ -17,6 +18,10 @@ export default function HomePage() {
 
     return (
         <section className="page">
+            <Link to="create-post">
+                <button className="btn-create">Create New Post</button>
+            </Link>
+
             <section className="grid-container">
                 {posts.map(post => (
                     <PostCard post={post} key={post.id} />

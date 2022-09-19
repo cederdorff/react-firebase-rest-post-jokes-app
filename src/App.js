@@ -11,7 +11,7 @@ export default function App() {
             <Nav />
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/create" element={<CreatePage />} />
+                <Route path="/create-post" element={<CreatePage />} />
                 <Route path="/jokes" element={<JokesPage />} />
                 <Route path="/posts/:postId" element={<UpdatePage />} />
                 <Route path="*" element={<Navigate to="/" />} />
